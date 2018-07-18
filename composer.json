@@ -1,0 +1,30 @@
+{
+    "name": "runner/laravel-fsm",
+    "description": "heshen fsm for laravel",
+    "keywords": ["laravel", "fsm"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "RunnerLee",
+            "email": "runnerleer@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "runner/heshen": "^1.0",
+        "illuminate/support": "^5.5",
+        "illuminate/database": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Runner\\LaravelFsm\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Runner\\LaravelFsm\\HeshenServiceProvider"
+            ]
+        }
+    }
+}
